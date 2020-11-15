@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST" enctype="multipart/form-data" action="{{ url_for('main.index') }}">
+    <div>
+        <input id="file[]" type="file" name="file[]" multiple="">
+        <output id="list"></output>
+        <input type="submit" value="From hard drive">
+    </div>
+    <div>
+        <input id="url[]" type="text" name="url[]">
+        <input type="submit" value="From URL">
+    </div>
+</form>
+{% endblock %}

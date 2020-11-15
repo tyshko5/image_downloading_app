@@ -1,0 +1,9 @@
+# ignore directories
+__pycache__/
+.venv/
+.pytest_cache/
+
+
+# ignore files
+.env
+.env.*

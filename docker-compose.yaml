@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    restart: always
+    container_name: app
+    environment:
+      - FLASK_ENV=dev
+      - FLASK_APP=app
+      - FLASK_DEBUG=1
+    stop_signal: SIGINT
